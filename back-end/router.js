@@ -1,6 +1,6 @@
 import { Router } from "express";
 import { adminHome, adminLogin, adminRegister, emailVerification } from "./adminRequestHandler.js";
-import Auth from "./middleware/auth.js";
+import Auth from "./middleware/Auth.js";
 const router=Router()
 
 router.route('/adminregister').post(adminRegister)
