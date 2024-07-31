@@ -27,7 +27,7 @@ setRegister((pre)=>({...pre,[e.target.name]:e.target.value}))
     e.preventDefault();
   
    try {
-    const res=await axios.post("http://localhost:3001/api/adminregister",register)
+    const res=await axios.post("http://15.206.66.135//api/adminregister",register)
     console.log(res);
     if (res.status==201)
       {
