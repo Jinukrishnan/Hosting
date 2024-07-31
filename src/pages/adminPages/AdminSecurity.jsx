@@ -52,7 +52,7 @@ e.preventDefault();
 if (!(login.email&&login.password)) {
   return toast("Fields are empty")
 }
-const res=await axios.post("http://localhost:3001/api/adminlogin",login)
+const res=await axios.post("http://15.206.66.135/api/adminlogin",login)
 console.log(res);
 if (res.status==200) {
   console.log(res.data.token);
